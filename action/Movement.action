@@ -1,0 +1,16 @@
+float32[] setpoint_odom
+float32 tolerance_odom
+float32 timeout_odom  #to exit the pid loop after certain time
+
+float32[] setpoint_sick
+float32 tolerance_sick
+float32 timeout_sick
+
+float32 setpoint_yaw
+float32 tolerance_yaw
+float32 timeout_yaw
+float32 vel_w
+---
+int64 feedback #smth random here idk
+---
+bool success
