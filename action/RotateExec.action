@@ -1,0 +1,10 @@
+# Goal 
+float32 target_angle          # target rotation in radians (next_angle - prev_angle)
+---
+# Result 
+bool    success               # true if yaw reached within tolerance
+float32 final_yaw             # actual yaw at completion
+---
+# Feedback 
+float32 current_yaw_error     # setpoint - measured yaw (radians)
+float32 current_yaw           # live IMU yaw reading (radians)

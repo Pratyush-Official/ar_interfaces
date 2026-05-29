@@ -7,6 +7,10 @@ find_package(rosidl_default_generators REQUIRED)
 # Generate the service
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/Movement.action"
+  "action/MoveTwist.action"
+  "action/RotateExec.action"
+  "msg/GripperCommand.msg"
+  "msg/GripperStatus.msg"
 )
 # Export dependencies for other packages to find this
 ament_export_dependencies(rosidl_default_runtime)

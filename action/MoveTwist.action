@@ -1,0 +1,16 @@
+# Goal
+float32 move_x          # X displacement in mm
+float32 move_y          # Y displacement in mm
+bool ramp_climb         #If true, only applies pid to the side deadwheel
+---
+
+# Result 
+bool    success             # True if the robot reached the target within tolerance
+float32 final_avg_dist_m    # Final average wheel distance travelled (m)
+
+---
+
+# Feedback
+float32 avg_dist_m      # Current average wheel distance travelled (m)
+float32 err_x           # Remaining error in X (mm)
+float32 err_y           # Remaining error in Y (mm)
