@@ -5,12 +5,13 @@ float32 timeout_odom  #to exit the pid loop after certain time
 float32[] setpoint_sick
 float32 tolerance_sick
 float32 timeout_sick
+int64[] sick_choose
 
 float32 setpoint_yaw
 float32 tolerance_yaw
 float32 timeout_yaw
 float32 vel_w
 ---
-int64 feedback #smth random here idk
+bool success #result
 ---
-bool success
+int64 feedback 
